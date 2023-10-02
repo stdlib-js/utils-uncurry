@@ -45,43 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-uncurry
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-uncurry = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-uncurry@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-uncurry/tags). For example,
-
-```javascript
-uncurry = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-uncurry@v0.1.0-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var uncurry = require( 'path/to/vendor/umd/utils-uncurry/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-uncurry@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.uncurry;
-})();
-</script>
+var uncurry = require( '@stdlib/utils-uncurry' );
 ```
 
 #### uncurry( fcn\[, arity]\[, thisArg] )
@@ -187,14 +174,9 @@ sum = fcn( 4 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-curry@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-uncurry@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var curry = require( '@stdlib/utils-curry' );
+var uncurry = require( '@stdlib/utils-uncurry' );
 
 var uncurried;
 var curried;
@@ -223,11 +205,6 @@ uncurried = uncurry( curried );
 
 out = uncurried( 0, 10, 20, 30, 40, 50 );
 // returns 150
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -296,8 +273,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-uncurry.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-uncurry
 
-[test-image]: https://github.com/stdlib-js/utils-uncurry/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/utils-uncurry/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/utils-uncurry/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/utils-uncurry/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-uncurry/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-uncurry?branch=main
@@ -328,9 +305,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/curry]: https://github.com/stdlib-js/utils-curry/tree/umd
+[@stdlib/utils/curry]: https://github.com/stdlib-js/utils-curry
 
-[@stdlib/utils/uncurry-right]: https://github.com/stdlib-js/utils-uncurry-right/tree/umd
+[@stdlib/utils/uncurry-right]: https://github.com/stdlib-js/utils-uncurry-right
 
 <!-- </related-links> -->
 
