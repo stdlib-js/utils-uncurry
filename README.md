@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import uncurry from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-uncurry@esm/index.mjs';
+import uncurry from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-uncurry@v0.2.1-esm/index.mjs';
 ```
 
 #### uncurry( fcn\[, arity]\[, thisArg] )
@@ -165,7 +165,7 @@ sum = fcn( 4 );
 <script type="module">
 
 import curry from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-curry@esm/index.mjs';
-import uncurry from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-uncurry@esm/index.mjs';
+import uncurry from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-uncurry@v0.2.1-esm/index.mjs';
 
 var uncurried;
 var curried;
